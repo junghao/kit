@@ -233,8 +233,6 @@ func (r Request) FuzzQuery(server string, fuzz []string) (int, error) {
 	}
 
 	i := 0
-	r.Status = http.StatusNotFound
-
 	r.Status = http.StatusBadRequest
 
 	for _, f := range fuzz {
